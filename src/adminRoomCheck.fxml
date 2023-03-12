@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="page2" prefHeight="581.0" prefWidth="872.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AdminRoomCheckController">
+   <children>
+      <ImageView fitHeight="624.0" fitWidth="886.0" layoutX="-7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/m.png" />
+         </image>
+      </ImageView>
+      <AnchorPane opacity="0.88" prefHeight="608.0" prefWidth="133.0" style="-fx-background-color: gray;">
+         <children>
+            <Button layoutX="15.0" layoutY="33.0" mnemonicParsing="false" onAction="#hmOnAction" prefHeight="54.0" prefWidth="124.0" style="-fx-background-color: white;" text="     Home">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="15.0" layoutY="265.0" mnemonicParsing="false" onAction="#roomOnAction" prefHeight="54.0" prefWidth="124.0" style="-fx-background-color: white;">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <effect>
+                  <Bloom />
+               </effect>
+            </Button>
+            <Text layoutX="65.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room Check" wrappingWidth="73.13671875">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Button layoutX="12.0" layoutY="454.0" mnemonicParsing="false" onAction="#mealOnAction" prefHeight="54.0" prefWidth="124.0">
+               <effect>
+                  <Bloom />
+               </effect>
+            </Button>
+            <Text layoutX="65.0" layoutY="476.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meal  Package" wrappingWidth="73.13672918081284">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="31.0" fitWidth="36.0" layoutX="21.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/af.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="31.0" fitWidth="36.0" layoutX="24.0" layoutY="276.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/se.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="36.0" layoutX="24.0" layoutY="463.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/am.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button layoutX="342.0" layoutY="144.0" mnemonicParsing="false" onAction="#addOnAction" opacity="0.71" prefHeight="48.0" prefWidth="238.0" style="-fx-background-color: cyan;" text="Add" textFill="#282626">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+         <opaqueInsets>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </opaqueInsets>
+      </Button>
+      <Button layoutX="342.0" layoutY="235.0" mnemonicParsing="false" onAction="#deleteOnAction" opacity="0.71" prefHeight="48.0" prefWidth="238.0" style="-fx-background-color: cyan;" text="Delete" textFill="#282626">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+         <opaqueInsets>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </opaqueInsets>
+      </Button>
+      <Button layoutX="342.0" layoutY="331.0" mnemonicParsing="false" onAction="#editOnAction" opacity="0.71" prefHeight="48.0" prefWidth="238.0" style="-fx-background-color: cyan;" text="Edit" textFill="#282626">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+         <opaqueInsets>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </opaqueInsets>
+      </Button>
+      <Button layoutX="655.0" layoutY="563.0" mnemonicParsing="false" onAction="#logOutOnAction" text="log out" textFill="#d00f0f">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

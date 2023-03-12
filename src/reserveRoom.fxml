@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="cus" prefHeight="581.0" prefWidth="872.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ReserveRoomController">
+   <children>
+      <ImageView fitHeight="581.0" fitWidth="872.0" opacity="0.83" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/1.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="14.0" layoutY="14.0" opacity="0.65" prefHeight="236.0" prefWidth="265.0" style="-fx-background-color: D9D9D9;">
+         <children>
+            <Label layoutX="37.0" layoutY="14.0" prefHeight="26.0" prefWidth="141.0" style="-fx-background-color: cyan;" text="   Check  Availability">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="4.0" layoutY="58.0" prefHeight="17.0" prefWidth="132.0" text="   Bed Capacity" textFill="#062ef8">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="rbtnDouble" layoutX="68.0" layoutY="85.0" mnemonicParsing="false" text="Double">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="meal" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="rbtnSingle" layoutY="85.0" mnemonicParsing="false" text="Single" toggleGroup="$meal">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="rbtnTriple" layoutX="147.0" layoutY="85.0" mnemonicParsing="false" text="Triple" toggleGroup="$meal">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="rbtnQuard" layoutX="207.0" layoutY="85.0" mnemonicParsing="false" text="quard" toggleGroup="$meal">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </RadioButton>
+            <Button layoutX="93.0" layoutY="133.0" mnemonicParsing="false" onAction="#searchOnAction" opacity="0.85" style="-fx-background-color: DF1BE3;" text="Search" textFill="#f8f4f4">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label layoutX="29.0" layoutY="173.0" prefHeight="17.0" prefWidth="205.0" text="Before  Add  Customer," textFill="#ff0404">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="197.0" prefHeight="19.0" prefWidth="205.0" text="Check   Availability  of   Room " textFill="#eb0101">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="287.0" layoutY="14.0" opacity="0.88" prefHeight="557.0" prefWidth="573.0" style="-fx-background-color: D9D9D9;">
+         <children>
+            <Label layoutX="166.0" layoutY="8.0" prefHeight="25.0" prefWidth="232.0" style="-fx-background-color: Cyan;" text="              Add     Customer" textFill="#111010">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="4.0" layoutY="48.0" prefHeight="17.0" prefWidth="132.0" text="01.  Name" textFill="#062ef8">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="4.0" layoutY="91.0" prefHeight="17.0" prefWidth="132.0" text="02.  NIC" textFill="#062ef8">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="4.0" layoutY="222.0" prefHeight="17.0" prefWidth="132.0" text="05.Tele" textFill="#062ef8">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="4.0" layoutY="177.0" prefHeight="17.0" prefWidth="132.0" text="04.  Email" textFill="#062ef8">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="4.0" layoutY="134.0" prefHeight="17.0" prefWidth="132.0" text="03 . Address" textFill="#062ef8">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="name" layoutX="136.0" layoutY="44.0" prefHeight="25.0" prefWidth="403.0" />
+            <TextField fx:id="add" layoutX="136.0" layoutY="130.0" prefHeight="25.0" prefWidth="403.0" />
+            <TextField fx:id="nic" layoutX="136.0" layoutY="87.0" prefHeight="25.0" prefWidth="403.0" />
+            <TextField fx:id="email" layoutX="136.0" layoutY="173.0" prefHeight="25.0" prefWidth="403.0" />
+            <TextField fx:id="tele" layoutX="136.0" layoutY="218.0" prefHeight="25.0" prefWidth="403.0" />
+            <Label layoutX="4.0" layoutY="270.0" prefHeight="17.0" prefWidth="132.0" text="06. Check In " textFill="#062ef8">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="checkOut" layoutX="136.0" layoutY="317.0" prefHeight="25.0" prefWidth="403.0" />
+            <TextField fx:id="checkIN" layoutX="136.0" layoutY="266.0" prefHeight="25.0" prefWidth="403.0" />
+            <Label layoutX="4.0" layoutY="321.0" prefHeight="17.0" prefWidth="132.0" text="07. Check  Out" textFill="#062ef8">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="4.0" layoutY="367.0" prefHeight="17.0" prefWidth="132.0" text="08.  Meal Plan" textFill="#062ef8">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="rbtnLocla" layoutX="136.0" layoutY="367.0" mnemonicParsing="false" text="Local  Meal" toggleGroup="$meal">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="rbtnChinees" layoutX="290.0" layoutY="367.0" mnemonicParsing="false" text="Chinees Meal" toggleGroup="$meal">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="rbtnFrench" layoutX="430.0" layoutY="367.0" mnemonicParsing="false" text="French  Meal" toggleGroup="$meal">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </RadioButton>
+            <Label layoutX="4.0" layoutY="406.0" prefHeight="17.0" prefWidth="132.0" text="09.Room Num" textFill="#062ef8">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="rmNumber" layoutX="136.0" layoutY="402.0" prefHeight="25.0" prefWidth="132.0" />
+            <Button layoutX="250.0" layoutY="455.0" mnemonicParsing="false" onAction="#addOnAction" prefHeight="31.0" prefWidth="76.0" style="-fx-background-color: d34dc8;" text="Add" textFill="#eee7eb">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="confrimation" layoutX="150.0" layoutY="504.0" prefHeight="17.0" prefWidth="279.0" text="      Successfull  Add  New Customer" textFill="#f50062" visible="false">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button layoutX="477.0" layoutY="524.0" mnemonicParsing="false" onAction="#dataOnClicked" prefHeight="25.0" prefWidth="96.0" style="-fx-background-color: f11172;" text="DATA-&gt;" textFill="#fcf8fa">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button layoutX="42.0" layoutY="532.0" mnemonicParsing="false" onAction="#backToOnAction" text="Back to Home" textFill="#f20404">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
